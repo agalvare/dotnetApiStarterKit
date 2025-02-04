@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure the web host to listen on 0.0.0.0:5000.
+// builder.WebHost.UseUrls("http://0.0.0.0:5000");
+
 // Add Application Insights telemetry support.
 builder.Services.AddApplicationInsightsTelemetry();
 
