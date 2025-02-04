@@ -1,9 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Add Application Insights telemetry support.
+builder.Services.AddApplicationInsightsTelemetry();
+
 // Add services to the container.
 builder.Services.AddControllers();
 
-// Register Swagger services
+// Register Swagger services.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
